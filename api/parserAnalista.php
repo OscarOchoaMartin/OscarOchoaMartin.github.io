@@ -1,5 +1,5 @@
 <?php
-     header('Content-Type: application/json'); 
+    header('Content-Type: application/json'); 
     function getInfoAnalista(){
         
         $curl = curl_init(); 
@@ -34,7 +34,7 @@
         
         //Mensaje de apuesta y cuota
 
-        echo json_encode($game, JSON_PRETTY_PRINT);
+        echo json_encode($game, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE);
     }
 
     getInfoAnalista();
