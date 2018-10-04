@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>JSON example</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <div>
+    <h3 id="id_1"><span>Current JSON file:</span></h3>
+    <!--
+    Text in a <pre> element is displayed in a fixed-width font
+    (usually Courier), and it preserves both spaces and line breaks.
+    -->
+    <pre id="html_json_section"></pre>
+  </div>
+
+  <h3 id="id_2"><br><span>Add JSON element:</span></h3>
+  <form id="form1 "name="change_json">
+    id: <br><input type="text" name="id"><br><br>
+    attrib_string: <br><input type="text" name="attrib_string"><br><br>
+    attrib_number: <br><input type="text" name="attrib_number"><br><br>
+    <input type="button" value="Apply" onclick="handlerSubmit()">
+  </form>
+  <br><br><br>Dummy demo created by <strong>Aldo Fuster Turpin</strong>.
+  <script src="script.js"> </script>
+</body>
+
+</html>
